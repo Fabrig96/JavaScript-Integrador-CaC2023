@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tickets</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/164b251517.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+    <!-- nav -->
+    <nav class="navbar fixed-top navbar-expand-md bg-custom px-5 py-0">
+        <div class="container-fluid">
+          <a class="navbar-brand me-0" href="index.html"><img id="logoNav" src="images/codoacodo-min.png" alt="Logo Codo a Codo"></a>
+          <div class="navbar-nav" id="descLogo">
+            <a class="nav-link active text-white" aria-current="page" href="index.html" >Conf Bs As</a>
+        </div>
+          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active text-white tex-md" aria-current="page" href="#">La conferencia</a>
+              <a class="nav-link textoNav " href="#">Los oradores</a>
+              <a class="nav-link textoNav " href="#">El lugar y la fecha</a>
+              <a class="nav-link textoNav " href="index.html#Conv-orador">Conviértete en orador</a>
+              <a class="nav-link textoNav text-success " href="#" data-bs-toggle="modal" data-bs-target="#myModal">Comprar Tickets</a>
+            </div>
+          </div>
+      </nav>
+      
+    </header>
+    <!-- Descuentos-->
+    <section>
+        <div class="container-fluid pt-5 pb-0">
+            <div class="container pt-5 pb-2 ">
+                <div class="row py-5 justify-content-center">
+                    <div class="col-md-3">
+                        <div class="card border border-primary">
+                            <div class="card-body text-center py-5">
+                              <div class="bg-info pt-2 pb-1 rounded rounded-4"><h5 class="card-title px-1">Estudiante</h5></div>
+                            
+                            
+                            <p class="card-text">Tienen un descuento</p>
+                            <p class="card-text fw-bold">80%</p>
+                            <p class="card-text text-secondary fs-6">*Presentar documentación </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border border-success">
+                            <div class="card-body text-center py-5">
+                            <div class="bg-custom-green pt-2 pb-1 rounded rounded-4"><h5 class="card-title px-1">Trainee</h5></div>
+                            <p class="card-text">Tienen un descuento</p>
+                            <p class="card-text fw-bold">50%</p>
+                            <p class="card-text text-secondary fs-6">*Presentar documentación </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border border-warning">
+                            <div class="card-body text-center py-5">
+                            <div class="bg-custom-yellow pt-2 pb-1 rounded rounded-4"><h5 class="card-title px-1">Junior</h5></div>
+                            <p class="card-text">Tienen un descuento</p>
+                            <p class="card-text fw-bold">15%</p>
+                            <p class="card-text text-secondary fs-6">*Presentar documentación </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Tickes Form-->
+    <section>
+        <div class="container-fluid mt-0">
+            <div class="container py-2">
+                <div class="row text-center">
+                    <div class="col justify-content-center">
+                        <h5>VENTA</h5>
+                        <h2>VALOR DE TICKET $200</h2>
+                    </div>
+                </div>
+                <form id="formulario-ticket" novalidate> 
+                    <div class="row justify-content-center py-3">
+                        <div class="col-md-4">
+                            <input type="text" class="form-control my-2" id="nombre" placeholder="Nombre" required >
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control my-2" id="apellido" placeholder="Apellido" required>
+                            
+                        </div>
+                    </div>
+                    <div class="row justify-content-center py-2">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control" id="correo" placeholder="Correo" required>
+                            
+                        </div>
+                    </div>
+                    <div class="row justify-content-center py-2">
+                        <div class="col-md-8">
+                          <p id="mensajeError" style="color: red;"></p>
+                            
+                        </div>
+                    </div>
+                    <div class="row justify-content-center py-2">
+                        <div class="col-md-4 my-2">
+                            <label for="cantidad">Cantidad</label>
+                            <input type="text" class="form-control" id="cantidad" placeholder="0">
+                        </div>
+                        <div class="col-md-4 my-2">
+                            <label for="cantidad">Categoría</label>
+                            <select class="form-select" name="categorias" id="categoria">
+                                <option value="seleccionar">--Seleccione--</option>
+                                <option value="SinCategoria">Sin categoría</option>
+                                <option value="Estudiante">Estudiante</option>
+                                <option value="Trainee">Trainee</option>
+                                <option value="Junior">Junior</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center py-3" >
+                        <div class="col-md-8 bg-info rounded py-3 " style="display: none;" id="total-pagar-block">
+                            <p id="total-pagar">Total a pagar: </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 d-flex align-items-center justify-content-center">
+                            
+                              <button type="button" class="btn btn-custom-color2 custom-tx-boton mb-2 mx-1 btn-custom-w" id="borrar">Borrar</button>
+                              <button type="button" class="btn btn-custom-color2 custom-tx-boton mb-2 mx-1 btn-custom-w" id="resumen">Resumen</button>
+                        </div>
+                     </div>
+                     <div class="row justify-content-center">
+                      <div class="col-md-8 d-flex align-items-center justify-content-center">
+                          
+                        <input type="button" class="btn btn-custom-3 custom-tx-boton mb-2 mx-1 btn-custom-w" id="comprar" value="Comprar">
+                            
+                      </div>
+                   </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="bg-footer text-dark pt-4 pb-4">
+        <div class="container-fluid">
+        <div class="container text-center">
+          <div class="row justify-content-center text-center">
+            <div class="col-md-1 col-sm-3 mx-4 my-3">
+              <a href="#" class="enlace-footer">Preguntas frecuentes</a>
+            </div>
+            <div class="col-md-1 col-sm-3 mx-4 my-3">
+              <a href="#" class="enlace-footer">Contáctanos</a>
+            </div>
+            <div class="col-md-1 col-sm-3 mx-4 my-3">
+              <a href="#" class="enlace-footer">Prensa</a>
+            </div>
+            <div class="col-md-1 col-sm-3 mx-4 my-3">
+              <a href="#" class="enlace-footer">Conferencias</a>
+            </div>
+            <div class="col-md-1 col-sm-3 mx-4 my-3">
+              <a href="#"class="enlace-footer" >Términos y condiciones</a>
+            </div>
+            <div class="col-md-1 col-sm-3 mx-4 my-3">
+              <a href="#" class="enlace-footer">Privacidad</a>
+            </div>
+            <div class="col-md-1 col-sm-3 mx-4 my-3">
+              <a href="#" class="enlace-footer">Estudiantes</a>
+            </div>
+          </div>
+        </div>
+          <div class="row justify-content-center text-center">
+            <div class="col-md-6 custom-ic">
+              <hr class="mb-3 text-white">
+              <h6>&copy; 2023 Fabrizio Aguilar - Todos los derechos reservados.</h6>
+            <a class="enlace-footer" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook me-4 fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; "></i></a>
+              <a class="enlace-footer" href="https://twitter.com" target="_blank"> <i class="fa-brands fa-square-x-twitter me-4 fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; "></i> </a>
+              <a class="enlace-footer" href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram me-4 fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; "></i> </a>
+              <a class="enlace-footer" href="https://www.linkedin.com/in/fabrizio-aguilar9/" target="_blank"><i class="fa-brands fa-linkedin me-4 fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; "></i></a>
+              <a class="enlace-footer" href="https://github.com/Fabrig96/" target="_blank"><i class="fa-brands fa-github me-4 fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; "></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      
+      <script src="js/TIntegradorJS_scripts.js"></script>
+
+      <script src="js/validarForm.js"></script>
+
+  </body>
+</html>

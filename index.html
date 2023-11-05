@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TP Integrador Front-End JS</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/164b251517.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+    <!-- nav -->
+    <nav class="navbar fixed-top navbar-expand-md bg-custom px-5 py-0">
+        <div class="container-fluid">
+          <a class="navbar-brand me-0" href="#"><img id="logoNav" src="images/codoacodo-min.png" alt="Logo Codo a Codo"></a>
+          <div class="navbar-nav" id="descLogo">
+            <a class="nav-link active text-white" aria-current="page" href="#" >Conf Bs As</a>
+        </div>
+          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active text-white tex-md" aria-current="page" href="#">La conferencia</a>
+              <a class="nav-link textoNav " href="#">Los oradores</a>
+              <a class="nav-link textoNav " href="#">El lugar y la fecha</a>
+              <a class="nav-link textoNav " href="#Conv-orador">Conviértete en orador</a>
+              <a class="nav-link textoNav text-success " href="tickets.html">Comprar Tickets</a>
+            </div>
+          </div>
+      </nav>
+
+    </header>
+ <!-- Carrusel -->
+   <section id="Carrusel">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active d-item">
+                <img src="images/ba1-min.jpg" class="d-block w-100 d-img bg-dark" alt="Buenos Aires 1">
+                    <div class="carousel-caption d-md-block carousel-text">
+                      <h1 class="mt-5 text-capitalize">Conf Bs As</h1>
+                      <p class="mt-3">
+                        Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!
+                      </p>
+                      <a href="#Conv-orador">
+                        <button type="button" class="btn btn-outline-light px-2 py-2 mt-3">Quiero ser orador</button>
+                      </a >
+                      <a href="tickets.html"><button type="button" class="btn btn-custom-color px-2 py-2 mt-3">Comprar Tickets</button></a>
+                    </div>
+              </div>
+              <div class="carousel-item d-item">
+                <img src="images/ba2-min.jpg" class="d-block w-100 d-img" alt="Buenos Aires 2">
+                <div class="carousel-caption d-md-block carousel-text">
+                  <h1 class="mt-5 text-capitalize">Conf Bs As</h1>
+                  <p class="mt-3">
+                    Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!
+                  </p>
+                  <a href="#Conv-orador">
+                    <button type="button" class="btn btn-outline-light px-2 py-2 mt-3">Quiero ser orador</button>
+                  </a href="tickets.html">
+                  <a href="tickets.html"><button type="button" class="btn btn-custom-color px-2 py-2 mt-3">Comprar Tickets</button></a>
+                </div>
+              </div>
+              <div class="carousel-item d-item">
+                <img src="images/ba3-min.jpg" class="d-block w-100 d-img" alt="Buenos Aires 3">
+                <div class="carousel-caption d-md-block carousel-text">
+                  <h1 class="mt-5 text-capitalize">Conf Bs As</h1>
+                  <p class="mt-3">
+                    Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!
+                  </p>
+                  <a href="#Conv-orador">
+                    <button type="button" class="btn btn-outline-light px-2 py-2 mt-3">Quiero ser orador</button>
+                  </a>
+                  <a href="tickets.html"><button type="button" class="btn btn-custom-color px-2 py-2 mt-3">Comprar Tickets</button></a>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+  <!-- Oradores -->
+  <section>
+    <div class="container-fluid my-5">
+      <div class="container mt-3 mb-4 ">
+        <div class="row ">
+          <div class="col text-center">
+            <p class="my-0 title-oradores text-uppercase">Conoce a los</p>
+            <h1 class="title-oradores">Oradores</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" >
+              <img src="images/steve-min.jpg" class="card-img-top" alt="Steve Jobs">
+              <div class="card-body">
+                  <p class="bg-warning custom-inline-block px-1 mt-3 rounded-2 lenguajes">JavaScript</p>
+                  <p  class="bg-info custom-inline-block px-1 mt-3 rounded-2 lenguajes-2">React</p>
+                <h2 class="card-title">Steve Jobs</h2>
+                <p class="card-text">Fue un empresario, inventor y cofundador de Apple Inc, una de las compañías de tecnología más influyentes del mundo. Es conocido por su visión innovadora y su habilidad para crear productos revolucionarios como el iPhone, el iPod y la Macintosh. También fundó Pixar Animation Studios. Jobs dejó un impacto duradero en la industria tecnológica y es reconocido por su enfoque en el diseño y la experiencia del usuario.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" >
+              <img src="images/bill-min.jpg" class="card-img-top" alt="Bill Gates">
+              <div class="card-body">
+                <p class="bg-warning custom-inline-block px-1 mt-3 rounded-2 lenguajes">JavaScript</p>
+                  <p  class="bg-info custom-inline-block px-1 mt-3 rounded-2 lenguajes-2">React</p>
+                <h2 class="card-title">Bill Gates</h2>
+                <p class="card-text">Es un empresario, filántropo e informático estadounidense. Es el cofundador de Microsoft, una de las mayores empresas de software del mundo. Ha contribuido significativamente al desarrollo de sistemas operativos y software de productividad como Windows y Microsoft Office. A través de su fundación, ha dedicado una gran parte de su riqueza a la filantropía, especialmente en áreas como la salud global y la educación.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" >
+              <img src="images/ada-min.jpeg" class="card-img-top" alt="Ada Lovelace">
+              <div class="card-body">
+                <p class="bg-secondary custom-inline-block px-1 mt-3 rounded-2 lenguajes-2">Negocios</p>
+                <p  class="bg-danger custom-inline-block px-1 mt-3 rounded-2 lenguajes-2">Startup</p>
+                <h2 class="card-title">Ada Lovelace</h2>
+                <p class="card-text"> Fue una matemática y escritora británica del siglo XIX, reconocida como la primera programadora. Es conocida por sus notas sobre la Máquina Charles Babbage, en las que elaboró algoritmos destinados a ser procesados por la máquina. Su trabajo sentó las bases para el desarrollo de la programación de computadoras y su legado es conmemorado en el Día de Ada Lovelace, para reconocer la contribución de las mujeres en la tecnología y la informática.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Tarjeta Dual-->
+  <section>
+      <div class="card mb-3 bg-custom-gr">
+        <div class="row g-0">
+          <div class=" col-lg-6">
+            <img src="images/mdplata.jpg" class="img-fluid rounded-start" alt="Mar del Plata">
+          </div>
+          <div class=" col-lg-6">
+            <div class="card-body text-white">
+              <h3 class="card-title">Bs As  -  Octubre</h3>
+              <p class="card-text">Mar del Plata, ubicada en la provincia de Buenos Aires, Argentina, es una popular ciudad costera famosa por sus extensas playas y su vibrante escena turística. Ofrece una amplia gama de actividades recreativas, una rica oferta gastronómica y una animada vida nocturna. La ciudad también es conocida por su escena cultural, con teatros, festivales y eventos artísticos. Es un destino ideal para aquellos que buscan disfrutar del sol y el mar, así como de una experiencia urbana dinámica. Además, cuenta con una gran variedad de opciones de alojamiento, desde hoteles boutique hasta acogedores hostales, para satisfacer las preferencias de todo tipo de viajeros.</p>
+        
+              <button type="button" class="btn btn-outline-light px-2 py-2 mt-3">Conoce más</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container pt-5"><hr class="linea-divisoria"></div>
+    <!--D. Full Stack-->
+    <section>
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-12 text-center pb-5">
+              <h3 id="title-fs">Desarrollo Web Full Stack</h3>
+            </div>
+          </div>
+        <div class="d-flex flex-wrap">
+          <div class="col-md-4 col-sm-6">
+            <div class="card h-100 text-center border-0">
+              <img src="images/html.png" class="card-img-top w-50 mx-auto pb-4" alt="html">
+              <div id="ho_color" class="card-body pt-3 item-tec">
+                <h5 class="card-title">HTML</h5>
+                <p class="card-text">HTML es el lenguaje de marcado estándar utilizado para crear páginas web. Define la estructura y el contenido de una página web mediante etiquetas y elementos que indican cómo se deben mostrar los elementos en un navegador web.</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 text-center border-0 ">
+            <img src="images/css.png" class="card-img-top w-50 mx-auto" alt="css">
+            <div id="ho_color" class="card-body pt-3 item-tec">
+              <h5 class="card-title">CSS</h5>
+              <p class="card-text">CSS es un lenguaje de estilo que se utiliza para controlar el diseño y la presentación de una página web. Permite definir el aspecto visual de los elementos HTML, como el color, la fuente, el diseño y otros estilos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card  h-100 text-center border-0">
+            <img src="images/js.png" class="card-img-top w-50 mx-auto" alt="javaScript">
+            <div id="ho_color" class="card-body pt-3 item-tec">
+              <h5 class="card-title">JavaScript</h5>
+              <p class="card-text">JavaScript es un lenguaje de programación de alto nivel que se utiliza para agregar interactividad y dinamismo a las páginas web. Es ejecutado en el navegador del usuario y permite manipular el contenido de una página, responder a eventos y comunicarse con servidores.</p>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-4 col-sm-6">
+          <div class="card  h-100 text-center border-0">
+            <img src="images/java.png" class="card-img-top w-50 mx-auto" alt="java">
+            <div id="ho_color" class="card-body pt-3 item-tec">
+              <h5 class="card-title">Java</h5>
+              <p class="card-text">Java es un lenguaje de programación de propósito general que se caracteriza por su portabilidad y capacidad de ejecutarse en múltiples plataformas. Es ampliamente utilizado en el desarrollo de aplicaciones empresariales, aplicaciones móviles y software de servidor.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 text-center border-0">
+            <img src="images/spring-boot.png" class="card-img-top w-50 mx-auto pb-3" alt="springboot">
+            <div id="ho_color" class="card-body pt-3 item-tec">
+              <h5 class="card-title">Spring Boot</h5>
+              <p class="card-text"> Spring Boot es un marco de desarrollo de aplicaciones basado en Java que facilita la creación de aplicaciones empresariales robustas y escalables. Proporciona un conjunto de herramientas y convenciones que aceleran el proceso de desarrollo y simplifican la configuración.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 text-center border-0">
+            <img src="images/git.png" class="card-img-top w-50 mx-auto pb-5" alt="git">
+            <div id="ho_color" class="card-body pt-3 item-tec">
+              <h5 class="card-title">Git</h5>
+              <p class="card-text">Git es un sistema de control de versiones que se utiliza para rastrear cambios en el código fuente durante el desarrollo de software. Permite a los equipos de desarrollo colaborar, llevar un historial de revisiones y gestionar el flujo de trabajo de desarrollo de manera eficiente.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+      
+    <div class="container"><hr class="linea-divisoria"></div>
+  <!--Formulario orador-->
+    <section id="Conv-orador">
+      <form class="needs-validation" novalidate action="">
+        <div class="container mb-4">
+          <div class="mt-5 py-2 text-center custom-desc">
+            <p class="mb-1">CONVIÉRTETE EN UN</p>      
+            <h3 class="mt-0">ORADOR</h3>
+            <p>Anótate como orador para una <span style="border-bottom:2px dotted #808080; text-decoration:none;">charla ignite.</span> Cuéntanos de qué quieres hablar!</p>
+          </div>
+          <div class="row justify-content-center">
+              <div class="col-md-3">
+                  <div class="mb-3">
+                    <div class="has-validation">
+                      <input type="text" class="form-control custom-input" id="FormNombre" placeholder="Nombre" required pattern="[A-Za-z]+">
+                      <div class="invalid-feedback">
+                        Debe ingresar su nombre y que sea válido
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="mb-3">
+                      <div class="has-validation">
+                        <input type="text" class="form-control custom-input" id="FormApellido" placeholder="Apellido" required pattern="[A-Za-z]+" >
+                        <div class="invalid-feedback">
+                          Debe ingresar su apellido y que sea válido
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row justify-content-center">
+              <div class="col-md-6">
+                  <div class="mb-2">
+                      <div class="has-validation">
+                        <textarea class="form-control custom-input-2" id="exampleFormControlTextarea1" rows="4" placeholder="Sobre qué quieres hablar?" required ></textarea>
+                        <div class="invalid-feedback">
+                          Debe completar este campo
+                        </div>
+                      </div>
+                  </div>
+                  <p class="custom-desc2 mt-0 mb-3">Recuerda incluir un título para tu charla</p>  
+              </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-12">
+                <div class="mb-3">
+                  <button type="submit" class="btn btn-custom-color2 w-50 custom-tx-boton">Enviar</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+    <!--Footer-->
+    <footer class="bg-footer text-dark pt-4 pb-4">
+        <div class="container-fluid">
+        <div class="container text-center">
+          <div class="row justify-content-center text-center">
+            <div class="col-md-1 col-sm-3 mx-4 my-3">
+              <a href="#" class="enlace-footer">Preguntas frecuentes</a>
+            </div>
+            <div class="col-md-1 col-sm-3 mx-4 my-3">
+              <a href="#" class="enlace-footer">Contáctanos</a>
+            </div>
+            <div class="col-md-1 col-sm-3 mx-4 my-3">
+              <a href="#" class="enlace-footer">Prensa</a>
+            </div>
+            <div class="col-md-1 col-sm-3 mx-4 my-3">
+              <a href="#" class="enlace-footer">Conferencias</a>
+            </div>
+            <div class="col-md-1 col-sm-3 mx-4 my-3">
+              <a href="#"class="enlace-footer" >Términos y condiciones</a>
+            </div>
+            <div class="col-md-1 col-sm-3 mx-4 my-3">
+              <a href="#" class="enlace-footer">Privacidad</a>
+            </div>
+            <div class="col-md-1 col-sm-3 mx-4 my-3">
+              <a href="#" class="enlace-footer">Estudiantes</a>
+            </div>
+          </div>
+        </div>
+          <div class="row justify-content-center text-center">
+            <div class="col-md-6 custom-ic">
+              <hr class="mb-3 text-white">
+              <h6>&copy; 2023 Fabrizio Aguilar - Todos los derechos reservados.</h6>
+            <a class="enlace-footer" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook me-4 fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; "></i></a>
+              <a class="enlace-footer" href="https://twitter.com" target="_blank"> <i class="fa-brands fa-square-x-twitter me-4 fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; "></i> </a>
+              <a class="enlace-footer" href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram me-4 fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; "></i> </a>
+              <a class="enlace-footer" href="https://www.linkedin.com/in/fabrizio-aguilar9/" target="_blank"><i class="fa-brands fa-linkedin me-4 fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; "></i></a>
+              <a class="enlace-footer" href="https://github.com/Fabrig96/" target="_blank"><i class="fa-brands fa-github me-4 fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; "></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="js/validarForm.js"></script>
+
+  </body>
+</html>

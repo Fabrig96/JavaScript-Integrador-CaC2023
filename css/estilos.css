@@ -1,0 +1,388 @@
+
+/*nav */
+.navbar.bg-custom {
+    background-color:#424242;
+}
+
+#logoNav{
+    width: 120px;
+    height: 80px;
+}
+
+#descLogo{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+   
+}
+.nav-link{
+    font-size: clamp(0.8em,1.2vw,1.2em);
+    font-family: 'Roboto', sans-serif;
+}
+.nav-link.textoNav{
+    color: #BDBDBD;
+    
+}
+.custom-toggler.navbar-toggler {
+  border-color:#ffff;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/* btn neon*/
+.btn-neon {
+
+  position: relative;
+  background-color: transparent;
+  border: 2px solid #007BFF; 
+  color: #007BFF; 
+  font-size: 1em;
+  padding: 10px 20px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.2s ease-out;
+}
+
+.btn-neon:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 123, 255, 0.3); 
+  border-radius: 10px;
+  transition: transform 0.4s ease-out;
+  z-index: -1;
+}
+
+.btn-neon:hover:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.btn-neon:hover {
+  transform: scale(0.95);
+}
+
+.btn-neon:active {
+  transform: scale(0.9);
+}
+
+/* Carrusel */
+
+  .carousel-text{
+    font-size: clamp(0.8em,1.2vw,1.2em);
+    font-family: 'Roboto', sans-serif;
+  }
+  .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+  }
+
+  .carousel-caption {
+    text-align: right;
+    right: 10%; 
+    left: auto;
+   
+    width: 50%; 
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .carousel-item img {
+    height: 80vh; 
+    object-fit: cover; 
+  }
+@media screen and (max-width: 900px){
+  .d-item{
+    height: 33em;
+  } 
+
+  .d-img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  .carousel-caption {
+    text-align: center;
+    right: 0;
+    left: 0;
+   
+    width: 100%; 
+    top: 40%;
+    transform: translateY(-50%); 
+  }
+ 
+}
+@media screen and (max-width: 700px){
+  .d-item{
+    height: 42em;
+  } 
+
+  .d-img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.carousel-control-prev {
+    width: 10%; 
+
+    left: 0; 
+    right: auto; 
+}
+.carousel-control-next {
+  width: 10%; 
+
+  right: 0; 
+  left: auto; 
+}
+
+
+/* oradores */
+
+.custom-inline-block {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+.lenguajes{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+.lenguajes-2{
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+
+/* Segunda Tarjeta*/
+.title-oradores{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.card-text{
+    font-size: clamp(0.8em,1.2vw,1.2em);
+    font-family: 'Roboto', sans-serif;
+}
+.card-title{
+    font-size: clamp(1.2em,1.5vw,1.6em);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.bg-custom-gr{
+    background: rgb(18,21,103);
+    background: radial-gradient(circle, rgba(18,21,103,1) 24%, rgba(26,116,171,1) 50%, rgba(14,9,79,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.bg-custom-gr2{
+    background: rgb(9,50,79);
+    background: linear-gradient(90deg, rgba(9,50,79,1) 11%, rgba(65,11,101,1) 52%, rgba(19,107,176,1) 100%, rgba(14,9,79,1) 100%);
+}
+
+@media (min-width: 768px) {
+    .no-contraction {
+      
+      max-width: none !important;
+      width: auto !important;
+    }
+  }
+
+/* Fullstack */
+#title-fs {
+
+  font-size: clamp(0.9em,1.3vw,1.4em);
+  font-family: 'Roboto', sans-serif;
+  color: #0f004d; 
+  font-weight: bold; 
+  text-align: center; 
+  text-transform: uppercase; 
+  margin: 0; 
+  padding: 10px; 
+  background-color: #04a0de; 
+  border: 2px solid #ccc;
+  border-radius: 8px; 
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+#title-fs:hover {
+  transform: scale(1.1); 
+}
+
+#title-fs::before {
+  content: '\f121'; 
+  font-family: FontAwesome;
+  margin-right: 8px; 
+}
+
+#title-fs::after {
+  content: '\f121'; 
+  font-family: FontAwesome; 
+  margin-left: 8px; 
+}
+
+#title-fs:hover::before,
+#title-fs:hover::after {
+  transform: rotate(360deg); 
+}
+
+.item-tec {
+  overflow: hidden; 
+}
+
+.item-tec h5 {
+  margin-top: 20px;
+  color: #323639;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-bottom: #020001 solid 3px;
+  display: inline-block;
+  padding-bottom: 6px;
+  transition: ease-in all 0.5s;
+}
+
+.item-tec p {
+  color: #323639;
+  font-size: 17px;
+  padding-top: 15px !important;
+  padding: 0;
+  line-height: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#ho_color:hover.item-tec h5 {
+  transition: ease-in all 0.5s;
+  color: #18ebf2;
+  border-bottom: #18d9f2 solid 3px;
+}
+
+/* LineaDivisión*/
+
+.linea-divisoria {
+  border: none; 
+  height: 2px;
+  background-color: #333; 
+  margin: 20px 0; 
+  border-radius: 5px;
+}
+
+/* Form */
+
+.custom-tx-boton{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 1.2em; 
+}
+.custom-tx-boton:hover{
+    background: #007BFF;
+}
+.custom-input::placeholder {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 1em; 
+     
+  }
+
+  .custom-input-2::placeholder {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 1.2em; 
+     
+  }
+
+  .custom-desc{
+    font-family: 'Roboto', sans-serif;
+  }
+  .custom-desc2{
+    color: #848484;
+    font-size: 0.8em;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .btn-custom-color{
+    color: #ffff;
+    background-color: #04B404;
+  }
+
+  .btn-custom-color2{
+    color: #ffff;
+    background-color: #3ADF00;
+  }
+
+  /* footer */
+
+.enlace-footer {
+  font-size: 0.9em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  color:#ffff; 
+  transition: color 0.3s; 
+}
+
+.enlace-footer:hover {
+  color: #F7DC6F ; 
+}
+
+.bg-footer{
+    background: rgb(4,74,83);
+    background: linear-gradient(60deg, rgba(4,74,83,1) 0%, rgba(0,30,88,1) 100%);
+}
+
+.custom-ic{
+  color: #ffff;
+  font-size: 1.6em;
+  text-decoration: none;
+}
+/*------------------------ */
+/*        tickets          */
+
+.btn-custom-w{
+  width: 100%;
+}
+
+#total-pagar{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+}
+.total-destacado {
+  color: red; 
+  font-weight: bold; 
+}
+
+.bg-custom-green{
+  background-color:#3ADF00;
+}
+
+.bg-custom-yellow{
+  background-color:#F7DC6F;
+}
+
+.cont-relieve {
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.5), inset 0 1px 0 rgba(255,255,255,0.2);
+}
+
+.btn-custom-3 {
+  background-color: #337eff; 
+  border-color: #4b33ff; 
+  color: #ffffff; 
+  font-weight: bold; 
+  transition: background-color 0.3s; 
+}
+
+.btn-custom-3:hover {
+  background-color: #ffed66; 
+  border-color: #ff8c66; 
+}
